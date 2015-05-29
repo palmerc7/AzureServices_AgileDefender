@@ -25,22 +25,4 @@ namespace Neudesic.AgileDefender.Services.Controllers
 
     }
 
-    [RoutePrefix("api/v2/config")]
-    public class ConfigControllerV2 : ApiController
-    {
-        public ConfigControllerV2()
-        {
-        }
-
-        [Route("validateV2")]
-        public HttpResponseMessage Get()
-        {
-            return new HttpResponseMessage()
-            {
-                Content = new StringContent(string.Format("Validate SUCCESS from Config V2 API: {0}", DateTime.Now.ToString()))
-            };
-        }
-
-    }
-
 }
