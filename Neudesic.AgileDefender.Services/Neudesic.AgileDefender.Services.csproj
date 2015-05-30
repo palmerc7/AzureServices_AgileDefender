@@ -222,6 +222,8 @@
     <Compile Include="Controllers\Version1\AgileActionController.cs" />
     <Compile Include="Controllers\Version1\ConfigController.cs" />
     <Compile Include="Controllers\Archived\TodoItemController.cs" />
+    <Compile Include="DataObjects\BaseClass.cs" />
+    <Compile Include="DataObjects\User.cs" />
     <Compile Include="Controllers\Version1\UserController.cs" />
     <Compile Include="Controllers\Version2\ConfigV2Controller.cs" />
     <Compile Include="DataObjects\TodoItem.cs" />
@@ -249,6 +251,8 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Properties\PublishProfiles\AgileDefenderServices - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\AgileDefenderServices - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\mobile%24AgileDefenderServices.pubxml" />
   </ItemGroup>
   <PropertyGroup>
