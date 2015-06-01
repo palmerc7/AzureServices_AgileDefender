@@ -22,5 +22,6 @@ namespace Neudesic.AgileDefender.Services.Controllers
                 Content = new StringContent(string.Format("Validate SUCCESS from Config V2 API: {0}", DateTime.Now.ToString()))
             };
         }
+
     }
 }

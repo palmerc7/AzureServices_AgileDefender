@@ -228,6 +228,8 @@
     <Compile Include="Controllers\Version2\ConfigV2Controller.cs" />
     <Compile Include="DataObjects\TodoItem.cs" />
     <Compile Include="Models\MobileServiceContext.cs" />
+    <Compile Include="Processors\UserProcessorESB.cs" />
+    <Compile Include="Processors\UserProcessorSQL.cs" />
     <Compile Include="ScheduledJobs\SampleJob.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
