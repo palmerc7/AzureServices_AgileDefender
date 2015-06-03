@@ -14,6 +14,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Neudesic.AgileDefender.Data
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Neudesic.AgileDefender.WebJobs", "Neudesic.AgileDefender.WebJobs\Neudesic.AgileDefender.WebJobs.csproj", "{01F04E2A-A538-4E22-A007-38CF1D57F773}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Neudesic.AgileDefender.Services", "Neudesic.AgileDefender.Services\Neudesic.AgileDefender.Services.csproj", "{33DDDFFD-296E-46B8-8020-E61E9B76609D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,6 +30,10 @@ Global
 		{01F04E2A-A538-4E22-A007-38CF1D57F773}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{01F04E2A-A538-4E22-A007-38CF1D57F773}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{01F04E2A-A538-4E22-A007-38CF1D57F773}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33DDDFFD-296E-46B8-8020-E61E9B76609D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33DDDFFD-296E-46B8-8020-E61E9B76609D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33DDDFFD-296E-46B8-8020-E61E9B76609D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33DDDFFD-296E-46B8-8020-E61E9B76609D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
