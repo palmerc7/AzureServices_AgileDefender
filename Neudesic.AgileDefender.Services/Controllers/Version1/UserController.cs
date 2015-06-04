@@ -6,7 +6,10 @@ using System.Net.Http;
 using System.Web.Http;
 using System.Web.Http.Description;
 using Microsoft.WindowsAzure.Mobile.Service.Security;
+
 using Neudesic.AgileDefender.Services.DataObjects;
+using Neudesic.AgileDefender.Services.Processors;
+using Neudesic.AgileDefender.Services.Helpers;
 
 namespace Neudesic.AgileDefender.Services.Controllers
 {
@@ -14,8 +17,11 @@ namespace Neudesic.AgileDefender.Services.Controllers
     [RoutePrefix("api/v1/user")]
     public class UserController : ApiController
     {
+        private UserProcessor userProcessor;
+
         public UserController()
         {
+            userProcessor = new UserProcessor();
         }
 
         [Route("validate")]
@@ -32,18 +38,20 @@ namespace Neudesic.AgileDefender.Services.Controllers
         [ResponseType(typeof(User))]
         public IHttpActionResult GetUserByEmail(string emailAddress)
         {
-            if (string.IsNullOrEmpty(emailAddress))
-                return NotFound();
-
             var user = new User();
+
+            if (string.IsNullOrEmpty(emailAddress))
+            {
+                // Changed from HTTP 404 Error, which is sometimes appropriate
+                //return NotFound();
+
+                // Sending nice message for client presentation
+                user.ErrorMessage = MessageResources.UserNotFound;
+            }
+
             try
             {
-                // Just returning fake data for now
-                user = new User
-                {
-                    Name = "Chris Palmer",
-                    Email = "chris.palmer@neudesic.com"
-                };
+                user = userProcessor.GetUserByEmail(emailAddress);
             }
             catch
             {

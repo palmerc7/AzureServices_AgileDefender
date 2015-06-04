@@ -5,7 +5,7 @@ using System.Web;
 
 namespace Neudesic.AgileDefender.Services.Processors
 {
-    public class UserProcessorESB
+    public class LocationProcessorESB
     {
     }
 }
