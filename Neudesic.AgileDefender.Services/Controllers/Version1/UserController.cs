@@ -5,11 +5,12 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using System.Web.Http.Description;
-
+using Microsoft.WindowsAzure.Mobile.Service.Security;
 using Neudesic.AgileDefender.Services.DataObjects;
 
 namespace Neudesic.AgileDefender.Services.Controllers
 {
+    [AuthorizeLevel(AuthorizationLevel.Anonymous)]
     [RoutePrefix("api/v1/user")]
     public class UserController : ApiController
     {
