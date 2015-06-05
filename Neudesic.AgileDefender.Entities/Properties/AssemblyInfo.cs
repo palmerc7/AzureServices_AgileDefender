@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Neudesic.AgileDefender.Storm")]
+[assembly: AssemblyTitle("Neudesic.AgileDefender.Entities")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("GameStop, Inc.")]
-[assembly: AssemblyProduct("Neudesic.AgileDefender.Storm")]
-[assembly: AssemblyCopyright("Copyright © GameStop, Inc. 2015")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("Neudesic.AgileDefender.Entities")]
+[assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("19ca0aed-0916-49b6-9b2d-e76cc1d6e87f")]
+[assembly: Guid("effe7cc1-0e92-47a4-a1e1-75f0c7c094ab")]
 
 // Version information for an assembly consists of the following four values:
 //
