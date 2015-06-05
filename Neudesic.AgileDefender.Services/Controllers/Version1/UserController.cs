@@ -31,6 +31,7 @@ namespace Neudesic.AgileDefender.Services.Controllers
         [Route("validate")]
         public HttpResponseMessage Validate()
         {
+            telemetryClient.TrackEvent("User.Validate");
             return new HttpResponseMessage()
             {
                 Content = new StringContent(string.Format("Validate SUCCESS from User API: {0}", DateTime.Now.ToString()))
