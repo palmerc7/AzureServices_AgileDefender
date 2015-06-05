@@ -18,6 +18,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Neudesic.AgileDefender.WebJ
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Neudesic.AgileDefender.Entities", "Neudesic.AgileDefender.Entities\Neudesic.AgileDefender.Entities.csproj", "{486EF15B-CE05-4E95-B1FD-72D0AB382FB7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Neudesic.AgileDefender.ServiceTests", "Neudesic.AgileDefender.ServiceTests\Neudesic.AgileDefender.ServiceTests.csproj", "{DF1CA925-7C31-43C3-AB73-EEDC38D3F6C9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -40,6 +42,10 @@ Global
 		{486EF15B-CE05-4E95-B1FD-72D0AB382FB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{486EF15B-CE05-4E95-B1FD-72D0AB382FB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{486EF15B-CE05-4E95-B1FD-72D0AB382FB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF1CA925-7C31-43C3-AB73-EEDC38D3F6C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF1CA925-7C31-43C3-AB73-EEDC38D3F6C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF1CA925-7C31-43C3-AB73-EEDC38D3F6C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF1CA925-7C31-43C3-AB73-EEDC38D3F6C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
