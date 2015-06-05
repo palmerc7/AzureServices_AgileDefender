@@ -8,5 +8,6 @@ namespace Neudesic.AgileDefender.Services.Helpers
     public static class MessageResources
     {
         public static string UserNotFound = "User not found";
+        public static string UserLocationEmpty = "User Location is blank or empty";
     }
 }

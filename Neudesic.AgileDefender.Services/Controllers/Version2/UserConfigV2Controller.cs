@@ -8,18 +8,19 @@ using System.Web.Http;
 namespace Neudesic.AgileDefender.Services.Controllers
 {
     [RoutePrefix("api/v2/config")]
-    public class ConfigV2Controller : ApiController
+    public class UserConfigV2Controller : ApiController
     {
-        public ConfigV2Controller()
+        public UserConfigV2Controller()
         {
         }
 
+        [HttpGet]
         [Route("validate")]
-        public HttpResponseMessage Get()
+        public HttpResponseMessage Validate()
         {
             return new HttpResponseMessage()
             {
-                Content = new StringContent(string.Format("Validate SUCCESS from Config V2 API: {0}", DateTime.Now.ToString()))
+                Content = new StringContent(string.Format("Validate SUCCESS from UserConfig V2 API: {0}", DateTime.Now.ToString()))
             };
         }
     }

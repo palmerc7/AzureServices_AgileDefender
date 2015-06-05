@@ -6,7 +6,6 @@ namespace Neudesic.AgileDefender.Services.ScheduledJobs
 {
     // A simple scheduled job which can be invoked manually by submitting an HTTP
     // POST request to the path "/jobs/sample".
-
     public class SampleJob : ScheduledJob
     {
         public override Task ExecuteAsync()

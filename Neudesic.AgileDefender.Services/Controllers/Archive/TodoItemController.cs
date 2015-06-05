@@ -4,11 +4,14 @@ using System.Web.Http;
 using System.Web.Http.Controllers;
 using System.Web.Http.OData;
 using Microsoft.WindowsAzure.Mobile.Service;
+using Microsoft.WindowsAzure.Mobile.Service.Security;
+
 using Neudesic.AgileDefender.Services.DataObjects;
 using Neudesic.AgileDefender.Services.Models;
 
 namespace Neudesic.AgileDefender.Services.Controllers
 {
+    [AuthorizeLevel(AuthorizationLevel.Admin)]
     public class TodoItemController : TableController<TodoItem>
     {
         protected override void Initialize(HttpControllerContext controllerContext)

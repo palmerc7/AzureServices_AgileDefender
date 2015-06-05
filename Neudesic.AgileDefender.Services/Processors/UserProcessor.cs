@@ -12,15 +12,24 @@ namespace Neudesic.AgileDefender.Services.Processors
     {
         public User GetUserByEmail(string emailAddress)
         {
-            // TODO returning fake data for now
-            var user = new User
+            var user = new User();
+            try
             {
-                Name = "Chris Palmer",
-                Email = "chris.palmer@neudesic.com",
-                IsSuccess = true
-            };
+                // TODO returning fake data for now
+                user = new User
+                {
+                    Id = Guid.NewGuid(),
+                    Name = "Chris Palmer",
+                    Email = "chris.palmer@neudesic.com"
+                };
+            }
+            catch
+            {
+                throw;
+            }
 
             return user;
         }
+
     }
 }

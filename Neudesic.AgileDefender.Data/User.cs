@@ -8,6 +8,7 @@ namespace Neudesic.AgileDefender.Data
 {
     public class User : BaseClass
     {
+        public Guid Id { get; set; }
         public string Name { get; set; }
         public string Email { get; set; }
     }

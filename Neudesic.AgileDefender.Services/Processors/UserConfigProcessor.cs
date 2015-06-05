@@ -5,7 +5,7 @@ using System.Web;
 
 namespace Neudesic.AgileDefender.Services.Processors
 {
-    public class ConfigProcessor
+    public class UserConfigProcessor
     {
     }
 }

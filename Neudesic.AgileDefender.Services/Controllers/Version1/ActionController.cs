@@ -9,20 +9,22 @@ using Microsoft.WindowsAzure.Mobile.Service.Security;
 namespace Neudesic.AgileDefender.Services.Controllers
 {
     [AuthorizeLevel(AuthorizationLevel.Anonymous)]
-    [RoutePrefix("api/v1/config")]
-    public class ConfigController : ApiController
+    [RoutePrefix("api/v1/action")]
+    public class ActionController : ApiController
     {
-        public ConfigController()
+        public ActionController()
         {
         }
 
+        [HttpGet]
         [Route("validate")]
-        public HttpResponseMessage Get()
+        public HttpResponseMessage Validate()
         {
             return new HttpResponseMessage()
             {
-                Content = new StringContent(string.Format("Validate SUCCESS from Config API: {0}", DateTime.Now.ToString()))
+                Content = new StringContent(string.Format("Validate SUCCESS from Action API: {0}", DateTime.Now.ToString()))
             };
         }
+
     }
 }
