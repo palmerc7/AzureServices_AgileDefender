@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Neudesic.AgileDefender.Services.DataObjects
 {
-    public class UserLocation: BaseClass
+    public class UserLocation : BaseClass
     {
         public Guid UserId { get; set; }
         public double Latitude { get; set; }
