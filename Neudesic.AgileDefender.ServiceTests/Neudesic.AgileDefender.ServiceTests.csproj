@@ -51,8 +51,15 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="AzureESBQueueTests.cs" />
     <Compile Include="UserServiceTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Neudesic.AgileDefender.Services\Neudesic.AgileDefender.Services.csproj">
+      <Project>{33dddffd-296e-46b8-8020-e61e9b76609d}</Project>
+      <Name>Neudesic.AgileDefender.Services</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

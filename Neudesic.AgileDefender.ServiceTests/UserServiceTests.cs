@@ -28,7 +28,7 @@ namespace Neudesic.AgileDefender.ServiceTests
 
         private void InitiateUserServiceCanValidate()
         {
-            Console.WriteLine("UserServiceCanValidate Started");
+            Console.WriteLine("UserServiceCanValidate Started with " + numberOfThreads.ToString() + " threads");
             Thread[] threads = new Thread[numberOfThreads];
             for (int i = 0; i < threads.Length; i++)
             {
@@ -47,7 +47,7 @@ namespace Neudesic.AgileDefender.ServiceTests
 
         private void InitiateUserServiceCanGetUserByEmail()
         {
-            Console.WriteLine("UserServiceCanGetUserByEmail Started");
+            Console.WriteLine("UserServiceCanGetUserByEmail Started with " + numberOfThreads.ToString() + " threads");
             Thread[] threads = new Thread[numberOfThreads];
             for (int i = 0; i < threads.Length; i++)
             {
