@@ -248,7 +248,6 @@
     <Compile Include="Controllers\Archive\TodoItemController.cs" />
     <Compile Include="Controllers\Version1\ActionController.cs" />
     <Compile Include="Controllers\Version1\UserConfigController.cs" />
-    <Compile Include="Controllers\Version1\UserLocationController.cs" />
     <Compile Include="Controllers\Version1\UserController.cs" />
     <Compile Include="Controllers\Version2\UserConfigV2Controller.cs" />
     <Compile Include="DataObjects\BaseClass.cs" />

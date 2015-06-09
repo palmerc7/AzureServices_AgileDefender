@@ -52,6 +52,7 @@
   </Choose>
   <ItemGroup>
     <Compile Include="AzureESBQueueTests.cs" />
+    <Compile Include="FaceOffersTests.cs" />
     <Compile Include="UserServiceTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
