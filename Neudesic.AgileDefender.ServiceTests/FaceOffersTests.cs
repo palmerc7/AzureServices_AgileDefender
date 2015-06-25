@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Net.Http;
+using System.Text;
 using System.Threading.Tasks;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
@@ -67,7 +68,15 @@ namespace Neudesic.AgileDefender.ServiceTests
                         //postTask.Result.EnsureSuccessStatusCode();
                     //});
 
-                    HttpResponseMessage response = await client.PostAsync(authApiUrl, content);
+                    string xmlString =
+                        "<AppCredential xmlns:i=\"http://www.w3.org/2001/XMLSchema-instance\" " +
+                        "xmlns=\"http://schemas.datacontract.org/2004/07/FaceOffers.Api.Models\">" +
+                        "<ApiKey>Mb7j6YSg84Bon2N9KtZe35Xms2P4Ryp8L3CrQi76Tfz9H5Wda5ADq6k7G2ExFw94</ApiKey>" +
+                        "</AppCredential>";
+
+                    var xmlContent = new StringContent(xmlString, Encoding.UTF8, "application/xml");
+
+                    HttpResponseMessage response = await client.PostAsync(authApiUrl, xmlContent);
                     var rr = response;
                 }
                 return result;
