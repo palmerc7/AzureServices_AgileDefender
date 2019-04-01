@@ -14,12 +14,12 @@ namespace Neudesic.AgileDefender.WebJobs
         // AzureWebJobsDashboard and AzureWebJobsStorage
         static void Main()
         {
-            var host = new JobHost();
+            //var host = new JobHost();
 
             RunLoadTest();
 
             // The following code ensures that the WebJob will be running continuously
-            host.RunAndBlock();
+            //host.RunAndBlock();
         }
 
         private static void RunLoadTest()
