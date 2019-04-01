@@ -6,7 +6,7 @@ using System.Net.Http;
 using System.Web.Http;
 using System.Web.Http.Description;
 using Microsoft.ApplicationInsights;
-using Microsoft.WindowsAzure.Mobile.Service.Security;
+//using Microsoft.WindowsAzure.Mobile.Service.Security;
 
 using Neudesic.AgileDefender.Services.DataObjects;
 using Neudesic.AgileDefender.Services.Processors;
@@ -14,7 +14,7 @@ using Neudesic.AgileDefender.Services.Helpers;
 
 namespace Neudesic.AgileDefender.Services.Controllers
 {
-    [AuthorizeLevel(AuthorizationLevel.Anonymous)]
+    //[AuthorizeLevel(AuthorizationLevel.Anonymous)]
     [RoutePrefix("api/v1/user")]
     public class UserController : ApiController
     {
